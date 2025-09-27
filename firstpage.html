@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ThusoMed Diagnostics Assistant – A doctors support tool</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      font-weight: bold;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    .facility-choice button {
+      padding: 15px 30px;
+      margin: 10px;
+      font-size: 1.2em;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: #007BFF;
+      color: white;
+      transition: background-color 0.3s;
+    }
+    .facility-choice button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>🏥 Clinic Pre-Arrival Triage</h1>
+  <p>Helping patients notify hospitals before arrival for faster, safer care</p>
+
+  <div class="facility-choice">
+    <p>Please choose your facility type:</p>
+    <button onclick="chooseFacility('Clinic')">Clinic</button>
+    <button onclick="chooseFacility('Hospital')">Hospital</button>
+  </div>
+
+  <script>
+    function chooseFacility(type) {
+      alert("You selected: " + type);
+      // Here you can redirect to another page, e.g.:
+      // window.location.href = type.toLowerCase() + ".html";
+    }
+  </script>
+</body>
+</html>
